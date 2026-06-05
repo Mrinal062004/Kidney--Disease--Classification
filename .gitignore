@@ -1,0 +1,6 @@
+artifacts/
+*.h5
+*.csv
+*.zip
+__pycache__/
+kidney/

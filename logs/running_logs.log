@@ -1,0 +1,194 @@
+[2026-05-27 21:47:46,889: INFO: main: Welcome to our custom logging]
+[2026-05-27 21:59:29,424: INFO: main: Welcome to our custom logging]
+[2026-05-28 09:53:44,649: INFO: main: Welcome to our custom logging]
+[2026-06-04 20:19:33,328: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-04 20:19:33,347: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-04 20:19:33,360: INFO: common: created  directory at : artifacts]
+[2026-06-04 20:19:33,366: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-04 20:19:33,370: INFO: 1923768424: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-04 20:23:30,288: INFO: 1923768424: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-04 20:24:27,187: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-04 20:24:27,211: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-04 20:24:27,219: INFO: common: created  directory at : artifacts]
+[2026-06-04 20:24:27,230: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-04 20:24:27,240: INFO: 1923768424: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-04 20:59:34,650: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-04 20:59:34,651: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-04 20:59:34,655: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-04 20:59:34,656: INFO: common: created  directory at : artifacts]
+[2026-06-04 20:59:34,657: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-04 20:59:34,657: ERROR: main: name 'DataIngestion' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 8, in <module>
+    obj.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\stage01_data_ingestion.py", line 12, in main
+    data_ingestion=DataIngestion(config=data_ingestion_config)
+NameError: name 'DataIngestion' is not defined
+[2026-06-04 21:03:12,498: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-04 21:03:12,500: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-04 21:03:12,503: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-04 21:03:12,504: INFO: common: created  directory at : artifacts]
+[2026-06-04 21:03:12,505: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-04 21:03:12,505: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-04 21:07:45,799: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-05 09:44:53,887: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-05 09:44:53,903: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 09:44:53,903: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 09:44:53,903: INFO: common: created  directory at : artifacts]
+[2026-06-05 09:44:53,903: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-05 09:44:53,903: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-05 09:47:28,570: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-05 09:47:59,071: INFO: main: ***************]
+[2026-06-05 09:47:59,071: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-05 09:47:59,075: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 09:47:59,075: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 09:47:59,075: INFO: common: created  directory at : artifacts]
+[2026-06-05 09:47:59,075: ERROR: main: 'ConfigurationManager' object has no attribute 'get_prepared_base_model_config']
+Traceback (most recent call last):
+  File "main.py", line 20, in <module>
+    obj.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\stage02_prepare_base_model.py", line 10, in main
+    prepared_base_model_config=config.get_prepared_base_model_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_prepared_base_model_config'
+[2026-06-05 09:59:10,598: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-05 09:59:10,678: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 09:59:10,790: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 09:59:10,826: INFO: common: created  directory at : artifacts]
+[2026-06-05 09:59:10,853: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-05 09:59:10,876: ERROR: main: 'NoneType' object has no attribute 'source_URL']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\stage01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\data_ingestion.py", line 27, in download_file
+    raise e
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\data_ingestion.py", line 18, in download_file
+    dataset_url=self.config.source_URL
+AttributeError: 'NoneType' object has no attribute 'source_URL'
+[2026-06-05 10:03:30,502: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-05 10:03:30,518: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 10:03:30,535: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 10:03:30,537: INFO: common: created  directory at : artifacts]
+[2026-06-05 10:03:30,539: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-05 10:03:30,554: ERROR: main: 'NoneType' object has no attribute 'source_URL']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\stage01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\data_ingestion.py", line 27, in download_file
+    raise e
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\data_ingestion.py", line 18, in download_file
+    dataset_url=self.config.source_URL
+AttributeError: 'NoneType' object has no attribute 'source_URL'
+[2026-06-05 10:46:01,090: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-05 10:46:01,101: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 10:46:01,116: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 10:46:01,120: INFO: common: created  directory at : artifacts]
+[2026-06-05 10:46:01,127: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-05 10:46:01,131: ERROR: main: 'NoneType' object has no attribute 'source_URL']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\stage01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\data_ingestion.py", line 27, in download_file
+    raise e
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\data_ingestion.py", line 18, in download_file
+    dataset_url=self.config.source_URL
+AttributeError: 'NoneType' object has no attribute 'source_URL'
+[2026-06-05 10:53:27,646: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-05 10:53:27,739: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 10:53:27,778: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 10:53:27,781: INFO: common: created  directory at : artifacts]
+[2026-06-05 10:53:27,783: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-05 10:53:27,785: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-05 10:54:49,649: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-05 10:55:40,129: INFO: main: ***************]
+[2026-06-05 10:55:40,130: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-05 10:55:40,139: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 10:55:40,147: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 10:55:40,150: INFO: common: created  directory at : artifacts]
+[2026-06-05 10:55:40,151: ERROR: main: 'ConfigurationManager' object has no attribute 'get_prepared_base_model_config']
+Traceback (most recent call last):
+  File "main.py", line 20, in <module>
+    obj.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\stage02_prepare_base_model.py", line 10, in main
+    prepared_base_model_config=config.get_prepared_base_model_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_prepared_base_model_config'
+[2026-06-05 10:59:22,256: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-05 10:59:22,259: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 10:59:22,263: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 10:59:22,264: INFO: common: created  directory at : artifacts]
+[2026-06-05 10:59:22,264: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-05 10:59:22,265: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-05 11:01:15,207: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-05 11:01:57,102: INFO: main: ***************]
+[2026-06-05 11:01:57,102: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-05 11:01:57,109: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 11:01:57,113: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 11:01:57,115: INFO: common: created  directory at : artifacts]
+[2026-06-05 11:01:57,116: ERROR: main: 'ConfigurationManager' object has no attribute 'get_prepared_base_model_config']
+Traceback (most recent call last):
+  File "main.py", line 20, in <module>
+    obj.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\stage02_prepare_base_model.py", line 10, in main
+    prepare_base_model_config=config.get_prepared_base_model_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_prepared_base_model_config'
+[2026-06-05 11:05:20,827: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-05 11:05:20,831: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 11:05:20,837: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 11:05:20,842: INFO: common: created  directory at : artifacts]
+[2026-06-05 11:05:20,843: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-05 11:05:20,844: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-05 11:07:37,669: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-05 11:08:57,630: INFO: main: ***************]
+[2026-06-05 11:08:57,632: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-05 11:08:57,715: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 11:08:57,740: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 11:08:57,750: INFO: common: created  directory at : artifacts]
+[2026-06-05 11:08:57,757: ERROR: main: 'ConfigurationManager' object has no attribute 'get_prepared_base_model_config']
+Traceback (most recent call last):
+  File "main.py", line 20, in <module>
+    obj.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\stage02_prepare_base_model.py", line 10, in main
+    prepare_base_model_config=config.get_prepared_base_model_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_prepared_base_model_config'
+[2026-06-05 11:10:28,986: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-05 11:10:28,989: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 11:10:28,992: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 11:10:28,994: INFO: common: created  directory at : artifacts]
+[2026-06-05 11:10:28,996: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-05 11:10:28,997: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-05 11:12:12,481: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-05 11:12:46,547: INFO: main: ***************]
+[2026-06-05 11:12:46,547: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-05 11:12:46,550: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-05 11:12:46,553: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-05 11:12:46,553: INFO: common: created  directory at : artifacts]
+[2026-06-05 11:12:46,557: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-05 11:12:47,378: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-05 11:12:47,746: INFO: main: >>>> stage Prepare Base Model completed<<<<
+
+x======x]
