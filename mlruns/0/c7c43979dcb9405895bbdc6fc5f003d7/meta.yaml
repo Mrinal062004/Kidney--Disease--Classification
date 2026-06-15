@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/c7c43979dcb9405895bbdc6fc5f003d7/artifacts
+end_time: 1781514353335
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c7c43979dcb9405895bbdc6fc5f003d7
+run_name: gifted-moose-747
+run_uuid: c7c43979dcb9405895bbdc6fc5f003d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781514332776
+status: 4
+tags: []
+user_id: user

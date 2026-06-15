@@ -331,3 +331,496 @@ x======x]
 [2026-06-12 13:11:39,055: INFO: main: stage Model Training completed <<<<< 
 
  X---------------------]
+[2026-06-13 09:34:28,795: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Mrinal062004/Kidney--Disease--Classification "HTTP/1.1 200 OK"]
+[2026-06-13 09:34:28,828: INFO: helpers: Initialized MLflow to track repo "Mrinal062004/Kidney--Disease--Classification"]
+[2026-06-13 09:34:28,833: INFO: helpers: Repository Mrinal062004/Kidney--Disease--Classification initialized!]
+[2026-06-13 09:35:41,548: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Mrinal062004/Kidney--Disease--Classification "HTTP/1.1 200 OK"]
+[2026-06-13 09:35:41,559: INFO: helpers: Initialized MLflow to track repo "Mrinal062004/Kidney--Disease--Classification"]
+[2026-06-13 09:35:41,562: INFO: helpers: Repository Mrinal062004/Kidney--Disease--Classification initialized!]
+[2026-06-13 10:03:37,788: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-13 10:03:37,881: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-13 10:03:37,895: INFO: common: created  directory at : artifacts]
+[2026-06-13 10:05:42,504: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-13 10:05:42,510: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-13 10:05:42,515: INFO: common: created  directory at : artifacts]
+[2026-06-13 10:08:23,831: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-13 10:08:23,842: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-13 10:08:23,848: INFO: common: created  directory at : artifacts]
+[2026-06-13 10:08:51,713: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-13 10:08:51,719: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-13 10:08:51,721: INFO: common: created  directory at : artifacts]
+[2026-06-13 10:14:18,394: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-13 10:14:18,415: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-13 10:14:18,423: INFO: common: created  directory at : artifacts]
+[2026-06-13 10:25:53,771: INFO: common: json file saved at : scores.json]
+[2026-06-13 10:28:19,024: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-13 10:28:19,139: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-13 10:28:19,156: INFO: common: created  directory at : artifacts]
+[2026-06-13 10:39:55,092: INFO: common: json file saved at : scores.json]
+[2026-06-15 09:45:48,347: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 09:45:48,379: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 09:45:48,387: INFO: common: created  directory at : artifacts]
+[2026-06-15 09:54:49,717: INFO: common: json file saved at : scores.json]
+[2026-06-15 09:59:58,167: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 09:59:58,196: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 09:59:58,205: INFO: common: created  directory at : artifacts]
+[2026-06-15 10:09:05,738: INFO: common: json file saved at : scores.json]
+[2026-06-15 10:09:22,628: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-06-15 10:09:23,206: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmpnwnrwve6\model\data\model\assets]
+[2026-06-15 10:36:39,591: INFO: main: >>>>> c Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-15 10:36:39,617: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 10:36:39,624: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 10:36:39,626: INFO: common: created  directory at : artifacts]
+[2026-06-15 10:36:39,627: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-15 10:36:39,628: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 10:39:37,139: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 10:41:13,638: INFO: main: ***************]
+[2026-06-15 10:41:13,643: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-15 10:41:13,674: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 10:41:13,686: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 10:41:13,688: INFO: common: created  directory at : artifacts]
+[2026-06-15 10:41:13,693: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-15 10:41:15,564: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-15 10:41:16,118: INFO: main: >>>> stage Prepare Base Model completed<<<<
+
+x======x]
+[2026-06-15 10:41:16,118: INFO: main: _______________________________________]
+[2026-06-15 10:41:16,119: INFO: main: >>>>> stage Model Training started <<<<<]
+[2026-06-15 10:41:16,125: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 10:41:16,127: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 10:41:16,127: INFO: common: created  directory at : artifacts]
+[2026-06-15 10:41:16,129: INFO: common: created  directory at : artifacts\training]
+[2026-06-15 11:07:32,279: INFO: main: stage Model Training completed <<<<< 
+
+ X---------------------]
+[2026-06-15 11:07:32,281: INFO: main: ***************]
+[2026-06-15 11:07:32,281: INFO: main: >>>> stage Evaluation Stage started <<<<]
+[2026-06-15 11:07:32,287: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 11:07:32,290: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 11:07:32,292: INFO: common: created  directory at : artifacts]
+[2026-06-15 11:13:52,040: INFO: common: json file saved at : scores.json]
+[2026-06-15 11:13:52,044: INFO: common: json file saved at : scores.json]
+[2026-06-15 11:13:56,607: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-06-15 11:13:57,626: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmpapq_j5ar\model\data\model\assets]
+[2026-06-15 11:14:15,207: ERROR: main: The configured tracking uri scheme: 'file' is invalid for use with the proxy mlflow-artifact scheme. The allowed tracking schemes are: {'https', 'http'}]
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    evaluate.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\model04_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\evaluation_mlflow.py", line 60, in log_into_mlflow
+    mlflow.keras.log_model(self.model,"model")
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 416, in _get_artifact_repo
+    artifact_repo = get_artifact_repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\artifact_repository_registry.py", line 106, in get_artifact_repository
+    return _artifact_repository_registry.get_artifact_repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\artifact_repository_registry.py", line 72, in get_artifact_repository
+    return repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 45, in __init__
+    super().__init__(self.resolve_uri(artifact_uri, get_tracking_uri()))
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 59, in resolve_uri
+    _validate_uri_scheme(track_parse.scheme)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 35, in _validate_uri_scheme
+    raise MlflowException(
+mlflow.exceptions.MlflowException: The configured tracking uri scheme: 'file' is invalid for use with the proxy mlflow-artifact scheme. The allowed tracking schemes are: {'https', 'http'}
+[2026-06-15 11:25:39,250: INFO: main: >>>>> c Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-15 11:25:39,253: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 11:25:39,259: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 11:25:39,261: INFO: common: created  directory at : artifacts]
+[2026-06-15 11:25:39,263: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-15 11:25:39,264: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 11:27:52,642: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 11:28:27,613: INFO: main: ***************]
+[2026-06-15 11:28:27,614: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-15 11:28:27,619: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 11:28:27,623: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 11:28:27,624: INFO: common: created  directory at : artifacts]
+[2026-06-15 11:28:27,627: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-15 11:28:28,795: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-15 11:28:29,287: INFO: main: >>>> stage Prepare Base Model completed<<<<
+
+x======x]
+[2026-06-15 11:28:29,288: INFO: main: _______________________________________]
+[2026-06-15 11:28:29,288: INFO: main: >>>>> stage Model Training started <<<<<]
+[2026-06-15 11:28:29,293: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 11:28:29,299: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 11:28:29,301: INFO: common: created  directory at : artifacts]
+[2026-06-15 11:28:29,303: INFO: common: created  directory at : artifacts\training]
+[2026-06-15 11:58:34,914: INFO: main: stage Model Training completed <<<<< 
+
+ X---------------------]
+[2026-06-15 11:58:34,919: INFO: main: ***************]
+[2026-06-15 11:58:34,920: INFO: main: >>>> stage Evaluation Stage started <<<<]
+[2026-06-15 11:58:34,929: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 11:58:34,934: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 11:58:34,936: INFO: common: created  directory at : artifacts]
+[2026-06-15 12:06:12,504: INFO: common: json file saved at : scores.json]
+[2026-06-15 12:06:12,507: INFO: common: json file saved at : scores.json]
+[2026-06-15 12:06:16,509: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-06-15 12:06:17,593: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmpybkkvxyi\model\data\model\assets]
+[2026-06-15 12:06:36,291: ERROR: main: The configured tracking uri scheme: 'file' is invalid for use with the proxy mlflow-artifact scheme. The allowed tracking schemes are: {'https', 'http'}]
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    evaluate.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\model04_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\evaluation_mlflow.py", line 62, in log_into_mlflow
+    mlflow.keras.log_model(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 416, in _get_artifact_repo
+    artifact_repo = get_artifact_repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\artifact_repository_registry.py", line 106, in get_artifact_repository
+    return _artifact_repository_registry.get_artifact_repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\artifact_repository_registry.py", line 72, in get_artifact_repository
+    return repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 45, in __init__
+    super().__init__(self.resolve_uri(artifact_uri, get_tracking_uri()))
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 59, in resolve_uri
+    _validate_uri_scheme(track_parse.scheme)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 35, in _validate_uri_scheme
+    raise MlflowException(
+mlflow.exceptions.MlflowException: The configured tracking uri scheme: 'file' is invalid for use with the proxy mlflow-artifact scheme. The allowed tracking schemes are: {'https', 'http'}
+[2026-06-15 12:07:29,841: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 12:07:29,861: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 12:07:29,868: INFO: common: created  directory at : artifacts]
+[2026-06-15 12:15:59,964: INFO: common: json file saved at : scores.json]
+[2026-06-15 12:17:10,600: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Mrinal062004/Kidney--Disease--Classification "HTTP/1.1 200 OK"]
+[2026-06-15 12:17:10,651: INFO: helpers: Initialized MLflow to track repo "Mrinal062004/Kidney--Disease--Classification"]
+[2026-06-15 12:17:10,656: INFO: helpers: Repository Mrinal062004/Kidney--Disease--Classification initialized!]
+[2026-06-15 12:17:31,445: INFO: main: >>>>> c Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-15 12:17:31,450: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 12:17:31,454: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 12:17:31,455: INFO: common: created  directory at : artifacts]
+[2026-06-15 12:17:31,456: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-15 12:17:31,457: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 12:19:18,669: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 12:19:48,364: INFO: main: ***************]
+[2026-06-15 12:19:48,365: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-15 12:19:48,372: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 12:19:48,376: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 12:19:48,377: INFO: common: created  directory at : artifacts]
+[2026-06-15 12:19:48,381: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-15 12:19:49,265: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-15 12:19:50,117: INFO: main: >>>> stage Prepare Base Model completed<<<<
+
+x======x]
+[2026-06-15 12:19:50,117: INFO: main: _______________________________________]
+[2026-06-15 12:19:50,118: INFO: main: >>>>> stage Model Training started <<<<<]
+[2026-06-15 12:19:50,124: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 12:19:50,128: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 12:19:50,130: INFO: common: created  directory at : artifacts]
+[2026-06-15 12:19:50,132: INFO: common: created  directory at : artifacts\training]
+[2026-06-15 12:45:07,246: INFO: main: stage Model Training completed <<<<< 
+
+ X---------------------]
+[2026-06-15 12:45:07,258: INFO: main: ***************]
+[2026-06-15 12:45:07,259: INFO: main: >>>> stage Evaluation Stage started <<<<]
+[2026-06-15 12:45:07,298: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 12:45:07,317: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 12:45:07,325: INFO: common: created  directory at : artifacts]
+[2026-06-15 12:53:18,589: INFO: common: json file saved at : scores.json]
+[2026-06-15 12:53:18,592: INFO: common: json file saved at : scores.json]
+[2026-06-15 12:53:21,231: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-06-15 12:53:22,102: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmpxy8353c0\model\data\model\assets]
+[2026-06-15 12:53:37,746: ERROR: main: The configured tracking uri scheme: 'file' is invalid for use with the proxy mlflow-artifact scheme. The allowed tracking schemes are: {'https', 'http'}]
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    evaluate.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\model04_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\evaluation_mlflow.py", line 62, in log_into_mlflow
+    mlflow.keras.log_model(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 416, in _get_artifact_repo
+    artifact_repo = get_artifact_repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\artifact_repository_registry.py", line 106, in get_artifact_repository
+    return _artifact_repository_registry.get_artifact_repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\artifact_repository_registry.py", line 72, in get_artifact_repository
+    return repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 45, in __init__
+    super().__init__(self.resolve_uri(artifact_uri, get_tracking_uri()))
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 59, in resolve_uri
+    _validate_uri_scheme(track_parse.scheme)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 35, in _validate_uri_scheme
+    raise MlflowException(
+mlflow.exceptions.MlflowException: The configured tracking uri scheme: 'file' is invalid for use with the proxy mlflow-artifact scheme. The allowed tracking schemes are: {'https', 'http'}
+[2026-06-15 12:59:07,937: INFO: main: >>>>> c Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-15 12:59:07,939: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 12:59:07,941: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 12:59:07,942: INFO: common: created  directory at : artifacts]
+[2026-06-15 12:59:07,943: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-15 12:59:07,943: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 13:08:16,108: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 13:08:48,200: INFO: main: ***************]
+[2026-06-15 13:08:48,201: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-15 13:08:48,225: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 13:08:48,239: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 13:08:48,244: INFO: common: created  directory at : artifacts]
+[2026-06-15 13:08:48,252: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-15 13:08:49,752: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-15 13:08:50,321: INFO: main: >>>> stage Prepare Base Model completed<<<<
+
+x======x]
+[2026-06-15 13:08:50,322: INFO: main: _______________________________________]
+[2026-06-15 13:08:50,322: INFO: main: >>>>> stage Model Training started <<<<<]
+[2026-06-15 13:08:50,326: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 13:08:50,328: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 13:08:50,329: INFO: common: created  directory at : artifacts]
+[2026-06-15 13:08:50,331: INFO: common: created  directory at : artifacts\training]
+[2026-06-15 13:37:13,025: INFO: main: stage Model Training completed <<<<< 
+
+ X---------------------]
+[2026-06-15 13:37:13,027: INFO: main: ***************]
+[2026-06-15 13:37:13,027: INFO: main: >>>> stage Evaluation Stage started <<<<]
+[2026-06-15 13:37:13,044: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 13:37:13,056: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 13:37:13,060: INFO: common: created  directory at : artifacts]
+[2026-06-15 13:44:53,688: INFO: common: json file saved at : scores.json]
+[2026-06-15 13:44:53,695: INFO: common: json file saved at : scores.json]
+[2026-06-15 13:44:56,418: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-06-15 13:44:57,196: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmp_ulzoolw\model\data\model\assets]
+[2026-06-15 13:45:14,178: ERROR: main: The configured tracking uri scheme: 'file' is invalid for use with the proxy mlflow-artifact scheme. The allowed tracking schemes are: {'http', 'https'}]
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    evaluate.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\model04_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\evaluation_mlflow.py", line 62, in log_into_mlflow
+    mlflow.keras.log_model(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 416, in _get_artifact_repo
+    artifact_repo = get_artifact_repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\artifact_repository_registry.py", line 106, in get_artifact_repository
+    return _artifact_repository_registry.get_artifact_repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\artifact_repository_registry.py", line 72, in get_artifact_repository
+    return repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 45, in __init__
+    super().__init__(self.resolve_uri(artifact_uri, get_tracking_uri()))
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 59, in resolve_uri
+    _validate_uri_scheme(track_parse.scheme)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 35, in _validate_uri_scheme
+    raise MlflowException(
+mlflow.exceptions.MlflowException: The configured tracking uri scheme: 'file' is invalid for use with the proxy mlflow-artifact scheme. The allowed tracking schemes are: {'http', 'https'}
+[2026-06-15 13:47:52,978: INFO: main: >>>>> c Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-15 13:47:52,981: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 13:47:52,986: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 13:47:52,989: INFO: common: created  directory at : artifacts]
+[2026-06-15 13:47:52,989: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-15 13:47:52,992: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 13:48:29,773: ERROR: main: ("Connection broken: ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)", ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))]
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\urllib3\response.py", line 444, in _error_catcher
+    yield
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\urllib3\response.py", line 567, in read
+    data = self._fp_read(amt) if not fp_closed else b""
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\urllib3\response.py", line 533, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\http\client.py", line 459, in read
+    n = self.readinto(b)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\http\client.py", line 503, in readinto
+    n = self.fp.readinto(b)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\socket.py", line 681, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\ssl.py", line 1132, in read
+    return self._sslobj.read(len, buffer)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\requests\models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\urllib3\response.py", line 628, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\urllib3\response.py", line 593, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\urllib3\response.py", line 461, in _error_catcher
+    raise ProtocolError("Connection broken: %r" % e, e)
+urllib3.exceptions.ProtocolError: ("Connection broken: ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)", ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 11, in <module>
+    obj.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\stage01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\data_ingestion.py", line 27, in download_file
+    raise e
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\data_ingestion.py", line 24, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\gdown\download.py", line 375, in download
+    for chunk in res.iter_content(chunk_size=CHUNK_SIZE):
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\requests\models.py", line 822, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ("Connection broken: ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)", ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))
+[2026-06-15 13:48:44,569: INFO: main: >>>>> c Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-15 13:48:44,571: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 13:48:44,573: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 13:48:44,574: INFO: common: created  directory at : artifacts]
+[2026-06-15 13:48:44,575: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-15 13:48:44,575: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 14:01:39,526: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 14:02:12,281: INFO: main: ***************]
+[2026-06-15 14:02:12,282: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-15 14:02:12,313: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 14:02:12,327: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 14:02:12,331: INFO: common: created  directory at : artifacts]
+[2026-06-15 14:02:12,337: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-15 14:02:13,994: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-15 14:02:14,514: INFO: main: >>>> stage Prepare Base Model completed<<<<
+
+x======x]
+[2026-06-15 14:02:14,514: INFO: main: _______________________________________]
+[2026-06-15 14:02:14,515: INFO: main: >>>>> stage Model Training started <<<<<]
+[2026-06-15 14:02:14,518: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 14:02:14,521: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 14:02:14,523: INFO: common: created  directory at : artifacts]
+[2026-06-15 14:02:14,524: INFO: common: created  directory at : artifacts\training]
+[2026-06-15 14:28:31,719: INFO: main: stage Model Training completed <<<<< 
+
+ X---------------------]
+[2026-06-15 14:28:31,720: INFO: main: ***************]
+[2026-06-15 14:28:31,721: INFO: main: >>>> stage Evaluation Stage started <<<<]
+[2026-06-15 14:28:31,725: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 14:28:31,729: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 14:28:31,730: INFO: common: created  directory at : artifacts]
+[2026-06-15 14:35:32,052: INFO: common: json file saved at : scores.json]
+[2026-06-15 14:35:32,056: INFO: common: json file saved at : scores.json]
+[2026-06-15 14:35:34,857: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-06-15 14:35:35,875: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmphewlrgg8\model\data\model\assets]
+[2026-06-15 14:35:53,340: ERROR: main: The configured tracking uri scheme: 'file' is invalid for use with the proxy mlflow-artifact scheme. The allowed tracking schemes are: {'https', 'http'}]
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    evaluate.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\model04_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\evaluation_mlflow.py", line 62, in log_into_mlflow
+    mlflow.keras.log_model(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 416, in _get_artifact_repo
+    artifact_repo = get_artifact_repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\artifact_repository_registry.py", line 106, in get_artifact_repository
+    return _artifact_repository_registry.get_artifact_repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\artifact_repository_registry.py", line 72, in get_artifact_repository
+    return repository(artifact_uri)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 45, in __init__
+    super().__init__(self.resolve_uri(artifact_uri, get_tracking_uri()))
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 59, in resolve_uri
+    _validate_uri_scheme(track_parse.scheme)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 35, in _validate_uri_scheme
+    raise MlflowException(
+mlflow.exceptions.MlflowException: The configured tracking uri scheme: 'file' is invalid for use with the proxy mlflow-artifact scheme. The allowed tracking schemes are: {'https', 'http'}
+[2026-06-15 15:41:21,288: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-15 15:41:21,307: INFO: helpers: Accessing as Mrinal062004]
+[2026-06-15 15:44:20,211: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-15 15:44:20,232: INFO: helpers: Accessing as Mrinal062004]
+[2026-06-15 15:44:24,501: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Mrinal062004/Kidney--Disease--Classification "HTTP/1.1 200 OK"]
+[2026-06-15 15:44:26,040: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-15 15:44:26,042: INFO: helpers: Initialized MLflow to track repo "Mrinal062004/Kidney--Disease--Classification"]
+[2026-06-15 15:44:26,044: INFO: helpers: Repository Mrinal062004/Kidney--Disease--Classification initialized!]
+[2026-06-15 15:44:34,923: INFO: main: >>>>> c Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-15 15:44:34,927: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 15:44:34,938: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 15:44:34,941: INFO: common: created  directory at : artifacts]
+[2026-06-15 15:44:34,942: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-15 15:44:34,942: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 15:46:41,207: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-15 15:47:22,644: INFO: main: ***************]
+[2026-06-15 15:47:22,645: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-15 15:47:22,665: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 15:47:22,673: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 15:47:22,675: INFO: common: created  directory at : artifacts]
+[2026-06-15 15:47:22,678: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-15 15:47:24,356: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-15 15:47:24,834: INFO: main: >>>> stage Prepare Base Model completed<<<<
+
+x======x]
+[2026-06-15 15:47:24,834: INFO: main: _______________________________________]
+[2026-06-15 15:47:24,836: INFO: main: >>>>> stage Model Training started <<<<<]
+[2026-06-15 15:47:24,842: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 15:47:24,844: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 15:47:24,845: INFO: common: created  directory at : artifacts]
+[2026-06-15 15:47:24,846: INFO: common: created  directory at : artifacts\training]
+[2026-06-15 16:22:45,266: INFO: main: stage Model Training completed <<<<< 
+
+ X---------------------]
+[2026-06-15 16:22:45,279: INFO: main: ***************]
+[2026-06-15 16:22:45,281: INFO: main: >>>> stage Evaluation Stage started <<<<]
+[2026-06-15 16:22:45,336: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-15 16:22:45,390: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-15 16:22:45,429: INFO: common: created  directory at : artifacts]
+[2026-06-15 16:32:36,064: INFO: common: json file saved at : scores.json]
+[2026-06-15 16:32:36,068: INFO: common: json file saved at : scores.json]
+[2026-06-15 16:32:41,577: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Mrinal062004/Kidney--Disease--Classification "HTTP/1.1 200 OK"]
+[2026-06-15 16:32:41,651: INFO: helpers: Initialized MLflow to track repo "Mrinal062004/Kidney--Disease--Classification"]
+[2026-06-15 16:32:41,658: INFO: helpers: Repository Mrinal062004/Kidney--Disease--Classification initialized!]
+[2026-06-15 16:32:57,774: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-06-15 16:33:00,097: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmplgbub83y\model\data\model\assets]
+[2026-06-15 16:38:45,855: INFO: main: >>>> stage Evaluation Stage completed<<<<
+
+x======x]

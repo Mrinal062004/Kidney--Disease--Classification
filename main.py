@@ -2,6 +2,15 @@ from Kidney import logger
 from Kidney.pipeline.stage01_data_ingestion import DataIngestionTrainingPipeline
 from Kidney.pipeline.stage02_prepare_base_model import PrepareBaseModelTrainingPipeline
 from Kidney.pipeline.stage03_training_model import ModelTrainingPipeline
+from Kidney.pipeline.model04_evaluation import EvaluationPipeline
+import dagshub
+import mlflow
+
+
+
+
+
+from Kidney.pipeline.model04_evaluation import EvaluationPipeline
 STAGE_NAME="Data Ingestion stage"
 
 try:
@@ -35,4 +44,16 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+
+
+STAGE_NAME="Evaluation Stage"
+try:
+    logger.info(f"***************")
+    logger.info(f">>>> stage {STAGE_NAME} started <<<<")
+    evaluate=EvaluationPipeline()
+    evaluate.main()
+    logger.info(f">>>> stage {STAGE_NAME} completed<<<<\n\nx======x")
+except Exception as e:
+    logger.exception(e)
+    raise e
 

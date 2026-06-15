@@ -30,3 +30,15 @@ in bash
 
    """bash 
    pip install -r requirements.txt
+
+
+
+   ### cmd 
+   -mlflow ui
+
+   #### dagshub
+   [dagshub]([text](https://dagshub.com/Mrinal062004/Kidney--Disease--Classification.mlflow)
+   export mlflow tracking url =https://dagshub.com/Mrinal062004/Kidney--Disease--Classification.mlflow
+   export username
+   export tracking password
+   
