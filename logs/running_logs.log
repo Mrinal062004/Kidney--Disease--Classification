@@ -1015,3 +1015,160 @@ mlflow.exceptions.RestException: INVALID_PARAMETER_VALUE: Response: {'error_code
 [2026-06-16 11:43:06,319: INFO: model04_evaluation: >>>> stage Evaluation Stage completed <<<<< 
 
 x=====]
+[2026-06-16 11:47:39,382: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.77.166.68:8080]
+[2026-06-16 11:47:39,384: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-16 11:48:12,630: ERROR: _internal: 10.77.166.68 - - [16/Jun/2026 11:48:12] code 400, message Bad request version ('*ÂM\x95\x1a\x19J¹\x1bUÎ')]
+[2026-06-16 11:48:12,632: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 11:48:12] "[35m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03OÚ\x9f^~@pÏ\x10}æ£\x16\x92\x9bÊ:\x0e\x05\x1fÁ(í·\x1cë(ëØ¥\x8c/ *ÂM\x95\x1a\x19J¹\x1bUÎ[0m" HTTPStatus.BAD_REQUEST -]
+[2026-06-16 11:48:12,658: ERROR: _internal: 10.77.166.68 - - [16/Jun/2026 11:48:12] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03ô\x9fÏãUÕ^Í¢ò')]
+[2026-06-16 11:48:12,659: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 11:48:12] "[35m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03ô\x9fÏãUÕ^Í¢ò\x0doÍÿn£\x0e[0m" HTTPStatus.BAD_REQUEST -]
+[2026-06-16 11:48:15,229: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 11:48:15] "GET / HTTP/1.1" 200 -]
+[2026-06-16 11:48:41,150: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 39, in predictRoute
+    result=clApp.classifier.predict()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\prediction.py", line 14, in predict
+    test_image=image.load_img(imagename,target_size=(128,128))
+NameError: name 'imagename' is not defined
+[2026-06-16 11:48:41,168: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 11:48:41] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-06-16 11:54:43,151: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.77.166.68:8080]
+[2026-06-16 11:54:43,151: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-16 11:54:46,319: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 11:54:46] "GET / HTTP/1.1" 200 -]
+[2026-06-16 11:54:54,902: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 39, in predictRoute
+    result=clApp.classifier.predict()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\prediction.py", line 17, in predict
+    test_image=np.extend_dims(test_image,axis=1)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\numpy\__init__.py", line 311, in __getattr__
+    raise AttributeError("module {!r} has no attribute "
+AttributeError: module 'numpy' has no attribute 'extend_dims'
+[2026-06-16 11:54:54,917: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 11:54:54] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-06-16 11:56:42,161: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.77.166.68:8080]
+[2026-06-16 11:56:42,162: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-16 11:56:44,297: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 11:56:44] "GET / HTTP/1.1" 200 -]
+[2026-06-16 11:56:50,805: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 39, in predictRoute
+    result=clApp.classifier.predict()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\prediction.py", line 18, in predict
+    result=np.argmax(model.predict(test_image),axis=1)
+AttributeError: 'str' object has no attribute 'predict'
+[2026-06-16 11:56:50,814: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 11:56:50] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-06-16 12:10:50,505: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.77.166.68:8080]
+[2026-06-16 12:10:50,507: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-16 12:11:16,330: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:11:16] "GET / HTTP/1.1" 200 -]
+[2026-06-16 12:11:24,972: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 40, in predictRoute
+    result=clApp.classifier.predict()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\prediction.py", line 13, in predict
+    model=self.filename
+AttributeError: 'PredictionPipeline' object has no attribute 'filename'
+[2026-06-16 12:11:24,990: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:11:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-06-16 12:14:15,451: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.77.166.68:8080]
+[2026-06-16 12:14:15,452: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-16 12:14:27,382: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:14:27] "GET / HTTP/1.1" 200 -]
+[2026-06-16 12:14:35,323: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:14:35] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:16:15,646: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:16:15] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:16:18,156: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:16:18] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:16:40,356: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:16:40] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:17:04,297: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:17:04] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:17:54,873: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:17:54] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:17:56,032: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:17:56] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:18:00,770: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:18:00] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:18:02,606: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:18:02] "GET / HTTP/1.1" 200 -]
+[2026-06-16 12:18:18,908: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.77.166.68:8080]
+[2026-06-16 12:18:18,909: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-16 12:18:27,552: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:18:27] "GET / HTTP/1.1" 200 -]
+[2026-06-16 12:18:34,726: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:18:34] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:18:51,392: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:18:51] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:18:59,031: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:18:59] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:19:12,682: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:19:12] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:19:13,864: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:19:13] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:19:14,426: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:19:14] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:19:14,909: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:19:14] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:21:40,260: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.77.166.68:8080]
+[2026-06-16 12:21:40,262: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-16 12:21:47,959: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:21:47] "GET / HTTP/1.1" 200 -]
+[2026-06-16 12:21:54,425: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:21:54] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:22:10,107: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:22:10] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:22:11,383: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:22:11] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:22:11,761: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:22:11] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:22:12,269: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:22:12] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:23:27,640: INFO: main: >>>>> c Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-16 12:23:27,651: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 12:23:27,666: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 12:23:27,671: INFO: common: created  directory at : artifacts]
+[2026-06-16 12:23:27,673: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-16 12:23:27,674: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]

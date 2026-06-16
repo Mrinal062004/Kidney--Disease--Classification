@@ -12,10 +12,11 @@ app =Flask(__name__)
 CORS(app)
 class ClientApp:
     def __init__(self):
-        self.filename="inputImage.jpg"
-        self.classifier=PredictionPipeline(self.filename)
+        self.filename = "inputImage.jpg"
 
-
+        self.classifier = PredictionPipeline(
+    "artifacts/training/model.h5"
+)
 
 @app.route("/",methods=["GET"])
 @cross_origin()
