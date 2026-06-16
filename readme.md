@@ -41,4 +41,11 @@ in bash
    export mlflow tracking url =https://dagshub.com/Mrinal062004/Kidney--Disease--Classification.mlflow
    export username
    export tracking password
+
+
+
+   ### dvc cmd
+   dvc init
+   dvc repro
+   dvc dag
    

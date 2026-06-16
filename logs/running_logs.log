@@ -824,3 +824,194 @@ x======x]
 [2026-06-15 16:38:45,855: INFO: main: >>>> stage Evaluation Stage completed<<<<
 
 x======x]
+[2026-06-16 09:50:51,196: INFO: stage01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-16 09:50:51,198: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 09:50:51,204: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 09:50:51,205: INFO: common: created  directory at : artifacts]
+[2026-06-16 09:50:51,206: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-16 09:50:51,207: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-16 09:52:32,137: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-16 10:01:44,833: INFO: stage02_prepare_base_model: ***************]
+[2026-06-16 10:01:44,835: INFO: stage02_prepare_base_model: >>>> stage Prepared Base Model started <<<<]
+[2026-06-16 10:01:44,846: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 10:01:44,855: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 10:01:44,858: INFO: common: created  directory at : artifacts]
+[2026-06-16 10:01:44,862: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-16 10:01:46,096: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-16 10:01:46,670: INFO: stage02_prepare_base_model: >>>> stage Prepared Base Model completed<<<<
+
+x======x]
+[2026-06-16 10:07:34,495: INFO: stage03_training_model: _______________________________________]
+[2026-06-16 10:07:34,496: INFO: stage03_training_model: >>>>> stage Model Training started <<<<<]
+[2026-06-16 10:07:34,501: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 10:07:34,506: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 10:07:34,507: INFO: common: created  directory at : artifacts]
+[2026-06-16 10:07:34,509: INFO: common: created  directory at : artifacts\training]
+[2026-06-16 10:38:28,069: INFO: stage03_training_model: stage Model Training completed <<<<< 
+
+ X---------------------]
+[2026-06-16 10:38:57,946: INFO: model04_evaluation: **********************]
+[2026-06-16 10:38:57,947: INFO: model04_evaluation: >>>>> stageEvaluation Stage started <<<<<]
+[2026-06-16 10:38:57,958: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 10:38:57,965: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 10:38:57,968: INFO: common: created  directory at : artifacts]
+[2026-06-16 10:46:12,613: INFO: common: json file saved at : scores.json]
+[2026-06-16 10:46:12,616: INFO: common: json file saved at : scores.json]
+[2026-06-16 10:46:17,978: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 10:46:17,997: INFO: helpers: Accessing as Mrinal062004]
+[2026-06-16 10:46:19,628: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Mrinal062004/Kidney--Disease--Classification "HTTP/1.1 200 OK"]
+[2026-06-16 10:46:23,845: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 10:46:23,848: INFO: helpers: Initialized MLflow to track repo "Mrinal062004/Kidney--Disease--Classification"]
+[2026-06-16 10:46:23,852: INFO: helpers: Repository Mrinal062004/Kidney--Disease--Classification initialized!]
+[2026-06-16 10:46:33,316: ERROR: model04_evaluation: INVALID_PARAMETER_VALUE: Response: {'error_code': 'INVALID_PARAMETER_VALUE'}]
+Traceback (most recent call last):
+  File "src/Kidney/pipeline/model04_evaluation.py", line 25, in <module>
+    obj.main()
+  File "src/Kidney/pipeline/model04_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\evaluation_mlflow.py", line 59, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 350, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 275, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 131, in create_run
+    return self.store.create_run(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 175, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 281, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 207, in verify_rest_response
+    raise RestException(json.loads(response.text))
+mlflow.exceptions.RestException: INVALID_PARAMETER_VALUE: Response: {'error_code': 'INVALID_PARAMETER_VALUE'}
+[2026-06-16 10:49:24,867: INFO: model04_evaluation: **********************]
+[2026-06-16 10:49:24,868: INFO: model04_evaluation: >>>>> stageEvaluation Stage started <<<<<]
+[2026-06-16 10:49:24,892: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 10:49:24,897: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 10:49:24,899: INFO: common: created  directory at : artifacts]
+[2026-06-16 10:56:39,054: INFO: common: json file saved at : scores.json]
+[2026-06-16 10:56:39,061: INFO: common: json file saved at : scores.json]
+[2026-06-16 10:56:43,304: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 10:56:43,352: INFO: helpers: Accessing as Mrinal062004]
+[2026-06-16 10:56:51,357: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Mrinal062004/Kidney--Disease--Classification "HTTP/1.1 200 OK"]
+[2026-06-16 10:56:52,392: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 10:56:52,399: INFO: helpers: Initialized MLflow to track repo "Mrinal062004/Kidney--Disease--Classification"]
+[2026-06-16 10:56:52,401: INFO: helpers: Repository Mrinal062004/Kidney--Disease--Classification initialized!]
+[2026-06-16 10:56:58,737: ERROR: model04_evaluation: INVALID_PARAMETER_VALUE: Response: {'error_code': 'INVALID_PARAMETER_VALUE'}]
+Traceback (most recent call last):
+  File "src/Kidney/pipeline/model04_evaluation.py", line 25, in <module>
+    obj.main()
+  File "src/Kidney/pipeline/model04_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\evaluation_mlflow.py", line 59, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 350, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 275, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 131, in create_run
+    return self.store.create_run(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 175, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 281, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 207, in verify_rest_response
+    raise RestException(json.loads(response.text))
+mlflow.exceptions.RestException: INVALID_PARAMETER_VALUE: Response: {'error_code': 'INVALID_PARAMETER_VALUE'}
+[2026-06-16 10:59:08,106: INFO: model04_evaluation: **********************]
+[2026-06-16 10:59:08,107: INFO: model04_evaluation: >>>>> stageEvaluation Stage started <<<<<]
+[2026-06-16 10:59:08,109: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 10:59:08,110: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 10:59:08,111: INFO: common: created  directory at : artifacts]
+[2026-06-16 11:08:23,374: INFO: common: json file saved at : scores.json]
+[2026-06-16 11:08:23,389: INFO: common: json file saved at : scores.json]
+[2026-06-16 11:08:26,420: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 11:08:26,520: INFO: helpers: Accessing as Mrinal062004]
+[2026-06-16 11:08:29,620: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Mrinal062004/Kidney--Disease--Classification "HTTP/1.1 200 OK"]
+[2026-06-16 11:08:30,735: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 11:08:30,747: INFO: helpers: Initialized MLflow to track repo "Mrinal062004/Kidney--Disease--Classification"]
+[2026-06-16 11:08:30,749: INFO: helpers: Repository Mrinal062004/Kidney--Disease--Classification initialized!]
+[2026-06-16 11:08:34,918: ERROR: model04_evaluation: INVALID_PARAMETER_VALUE: Response: {'error_code': 'INVALID_PARAMETER_VALUE'}]
+Traceback (most recent call last):
+  File "src/Kidney/pipeline/model04_evaluation.py", line 25, in <module>
+    obj.main()
+  File "src/Kidney/pipeline/model04_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\evaluation_mlflow.py", line 59, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 350, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 275, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 131, in create_run
+    return self.store.create_run(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 175, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 281, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 207, in verify_rest_response
+    raise RestException(json.loads(response.text))
+mlflow.exceptions.RestException: INVALID_PARAMETER_VALUE: Response: {'error_code': 'INVALID_PARAMETER_VALUE'}
+[2026-06-16 11:12:30,541: INFO: model04_evaluation: **********************]
+[2026-06-16 11:12:30,543: INFO: model04_evaluation: >>>>> stageEvaluation Stage started <<<<<]
+[2026-06-16 11:12:30,547: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 11:12:30,550: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 11:12:30,553: INFO: common: created  directory at : artifacts]
+[2026-06-16 11:19:45,469: INFO: common: json file saved at : scores.json]
+[2026-06-16 11:19:45,472: INFO: common: json file saved at : scores.json]
+[2026-06-16 11:19:50,471: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 11:19:50,495: INFO: helpers: Accessing as Mrinal062004]
+[2026-06-16 11:19:51,748: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Mrinal062004/Kidney--Disease--Classification "HTTP/1.1 200 OK"]
+[2026-06-16 11:19:53,832: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 11:19:53,837: INFO: helpers: Initialized MLflow to track repo "Mrinal062004/Kidney--Disease--Classification"]
+[2026-06-16 11:19:53,840: INFO: helpers: Repository Mrinal062004/Kidney--Disease--Classification initialized!]
+[2026-06-16 11:20:01,624: ERROR: model04_evaluation: INVALID_PARAMETER_VALUE: Response: {'error_code': 'INVALID_PARAMETER_VALUE'}]
+Traceback (most recent call last):
+  File "src/Kidney/pipeline/model04_evaluation.py", line 25, in <module>
+    obj.main()
+  File "src/Kidney/pipeline/model04_evaluation.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\evaluation_mlflow.py", line 59, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 350, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 275, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 131, in create_run
+    return self.store.create_run(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 175, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 281, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 207, in verify_rest_response
+    raise RestException(json.loads(response.text))
+mlflow.exceptions.RestException: INVALID_PARAMETER_VALUE: Response: {'error_code': 'INVALID_PARAMETER_VALUE'}
+[2026-06-16 11:27:25,555: INFO: model04_evaluation: **********************]
+[2026-06-16 11:27:25,556: INFO: model04_evaluation: >>>>> stageEvaluation Stage started <<<<<]
+[2026-06-16 11:27:25,563: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 11:27:25,572: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 11:27:25,577: INFO: common: created  directory at : artifacts]
+[2026-06-16 11:34:43,133: INFO: common: json file saved at : scores.json]
+[2026-06-16 11:34:43,135: INFO: common: json file saved at : scores.json]
+[2026-06-16 11:34:45,836: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 11:34:45,854: INFO: helpers: Accessing as Mrinal062004]
+[2026-06-16 11:34:47,431: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Mrinal062004/Kidney--Disease--Classification "HTTP/1.1 200 OK"]
+[2026-06-16 11:34:52,552: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 11:34:52,555: INFO: helpers: Initialized MLflow to track repo "Mrinal062004/Kidney--Disease--Classification"]
+[2026-06-16 11:34:52,557: INFO: helpers: Repository Mrinal062004/Kidney--Disease--Classification initialized!]
+[2026-06-16 11:35:04,081: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-06-16 11:35:04,522: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmpfgz7rxv8\model\data\model\assets]
+[2026-06-16 11:39:13,833: WARNING: connectionpool: Retrying (Retry(total=4, connect=5, read=5, redirect=5, status=5)) after connection broken by 'SSLError(SSLError(5, '[SYS] unknown error (_ssl.c:2503)'))': /Mrinal062004/Kidney--Disease--Classification.mlflow/api/2.0/mlflow-artifacts/artifacts/2f2e2feec88f4f1aac160a53d32b9092/256226a995f94fb288ad336fb4b3f205/artifacts/model/data/model/variables/variables.data-00000-of-00001]
+[2026-06-16 11:43:06,319: INFO: model04_evaluation: >>>> stage Evaluation Stage completed <<<<< 
+
+x=====]
