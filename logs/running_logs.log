@@ -1339,3 +1339,123 @@ x======x]
 [2026-06-16 17:37:01,297: INFO: _internal: 172.31.3.229 - - [16/Jun/2026 17:37:01] "GET / HTTP/1.1" 200 -]
 [2026-06-16 17:37:25,794: INFO: _internal: 172.31.3.229 - - [16/Jun/2026 17:37:25] "POST /predict HTTP/1.1" 200 -]
 [2026-06-16 17:37:42,695: INFO: _internal: 172.31.3.229 - - [16/Jun/2026 17:37:42] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 17:54:22,305: INFO: stage01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-16 17:54:22,309: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 17:54:22,315: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 17:54:22,317: INFO: common: created  directory at : artifacts]
+[2026-06-16 17:54:22,319: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-16 17:54:22,319: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1y-BVxKFm-MJW5RlUvBAu53wlw7g4sRMW/view?usp=drivesdk into file artifacts/data_ingestion/data.zip]
+[2026-06-16 17:54:44,951: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.3.229:8080]
+[2026-06-16 17:54:44,952: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-16 17:55:11,312: INFO: _internal: 172.31.3.229 - - [16/Jun/2026 17:55:11] "GET / HTTP/1.1" 200 -]
+[2026-06-16 17:56:39,053: INFO: _internal: 172.31.3.229 - - [16/Jun/2026 17:56:39] "GET / HTTP/1.1" 200 -]
+[2026-06-16 17:57:34,059: INFO: stage01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-16 17:57:34,061: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 17:57:34,064: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 17:57:34,066: INFO: common: created  directory at : artifacts]
+[2026-06-16 17:57:34,067: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-16 17:57:34,067: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1y-BVxKFm-MJW5RlUvBAu53wlw7g4sRMW/view?usp=drivesdk into file artifacts/data_ingestion/data.zip]
+[2026-06-16 17:59:40,574: ERROR: stage01_data_ingestion: ("Connection broken: ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)", ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))]
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\urllib3\response.py", line 444, in _error_catcher
+    yield
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\urllib3\response.py", line 567, in read
+    data = self._fp_read(amt) if not fp_closed else b""
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\urllib3\response.py", line 533, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\http\client.py", line 459, in read
+    n = self.readinto(b)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\http\client.py", line 503, in readinto
+    n = self.fp.readinto(b)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\socket.py", line 681, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\ssl.py", line 1132, in read
+    return self._sslobj.read(len, buffer)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\requests\models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\urllib3\response.py", line 628, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\urllib3\response.py", line 593, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\urllib3\response.py", line 461, in _error_catcher
+    raise ProtocolError("Connection broken: %r" % e, e)
+urllib3.exceptions.ProtocolError: ("Connection broken: ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)", ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/Kidney/pipeline/stage01_data_ingestion.py", line 20, in <module>
+    obj.main()
+  File "src/Kidney/pipeline/stage01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\data_ingestion.py", line 27, in download_file
+    raise e
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\data_ingestion.py", line 24, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\gdown\download.py", line 375, in download
+    for chunk in res.iter_content(chunk_size=CHUNK_SIZE):
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\requests\models.py", line 822, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ("Connection broken: ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)", ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))
+[2026-06-16 17:59:48,602: INFO: stage01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-16 17:59:48,605: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 17:59:48,608: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 17:59:48,608: INFO: common: created  directory at : artifacts]
+[2026-06-16 17:59:48,609: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-16 17:59:48,610: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1y-BVxKFm-MJW5RlUvBAu53wlw7g4sRMW/view?usp=drivesdk into file artifacts/data_ingestion/data.zip]
+[2026-06-16 18:00:35,635: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1y-BVxKFm-MJW5RlUvBAu53wlw7g4sRMW/view?usp=drivesdk into file artifacts/data_ingestion/data.zip]
+[2026-06-16 18:04:40,497: INFO: stage02_prepare_base_model: ***************]
+[2026-06-16 18:04:40,498: INFO: stage02_prepare_base_model: >>>> stage Prepared Base Model started <<<<]
+[2026-06-16 18:04:40,502: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 18:04:40,506: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 18:04:40,507: INFO: common: created  directory at : artifacts]
+[2026-06-16 18:04:40,509: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-16 18:04:41,176: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-16 18:04:41,502: INFO: stage02_prepare_base_model: >>>> stage Prepared Base Model completed<<<<
+
+x======x]
+[2026-06-16 18:04:49,291: INFO: stage03_training_model: _______________________________________]
+[2026-06-16 18:04:49,292: INFO: stage03_training_model: >>>>> stage Model Training started <<<<<]
+[2026-06-16 18:04:49,297: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 18:04:49,299: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 18:04:49,300: INFO: common: created  directory at : artifacts]
+[2026-06-16 18:04:49,301: INFO: common: created  directory at : artifacts\training]
+[2026-06-16 21:27:49,294: INFO: stage03_training_model: stage Model Training completed <<<<< 
+
+ X---------------------]
+[2026-06-16 21:28:30,757: INFO: model04_evaluation: **********************]
+[2026-06-16 21:28:30,759: INFO: model04_evaluation: >>>>> stageEvaluation Stage started <<<<<]
+[2026-06-16 21:28:30,774: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 21:28:30,783: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 21:28:30,786: INFO: common: created  directory at : artifacts]
+[2026-06-16 21:32:02,550: INFO: common: json file saved at : scores.json]
+[2026-06-16 21:32:02,553: INFO: common: json file saved at : scores.json]
+[2026-06-16 21:32:18,329: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 21:32:18,351: INFO: helpers: Accessing as Mrinal062004]
+[2026-06-16 21:32:21,790: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Mrinal062004/Kidney--Disease--Classification "HTTP/1.1 200 OK"]
+[2026-06-16 21:32:23,095: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 21:32:23,102: INFO: helpers: Initialized MLflow to track repo "Mrinal062004/Kidney--Disease--Classification"]
+[2026-06-16 21:32:23,105: INFO: helpers: Repository Mrinal062004/Kidney--Disease--Classification initialized!]
+[2026-06-16 21:32:33,885: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-06-16 21:32:34,799: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmpnfikx1qn\model\data\model\assets]
+[2026-06-16 21:39:27,095: INFO: model04_evaluation: >>>> stage Evaluation Stage completed <<<<< 
+
+x=====]
