@@ -41,6 +41,6 @@ def predictRoute():
 if __name__=="__main__":
     clApp=ClientApp()
     #app.run(host="0.0.0.0",portr=8080)# for local host
-    app.run(host="0.0.0.0",portr=8080)# for Aws
+    app.run(host="0.0.0.0",port=8080)# for Aws
 
     #app.run(host="0.0.0.0",portr=80)# for Azure 
