@@ -1327,3 +1327,15 @@ x======x]
 [2026-06-16 17:36:00,381: INFO: main: >>>> stage Evaluation Stage completed<<<<
 
 x======x]
+[2026-06-16 17:36:37,943: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.3.229:8080]
+[2026-06-16 17:36:37,944: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-16 17:36:57,893: ERROR: _internal: 172.31.3.229 - - [16/Jun/2026 17:36:57] code 400, message Bad request version ('D7\x08')]
+[2026-06-16 17:36:57,897: INFO: _internal: 172.31.3.229 - - [16/Jun/2026 17:36:57] "[35m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03¢`®\x88 \x12G\x8c5\x95¹$ÃG\\/\x9cÆI\x8c\x82\x09¢9Ï \x0f"P\x0638 \x9fë\x19&M¤\x1aE>xÛO!\x9aF¶Q\x80Gõ³o¾Î\x9aËpç\x1c¶ø\x0f\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x9a\x9a\x00\x00ÿ\x01\x00\x01\x00DÍ\x00\x05\x00\x03\x02h2\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x003\x04ï\x04í\x1a\x1a\x00\x01\x00\x11ì\x04ÀäÆ\x92J\x9c\x7f\x83÷w V´º\x97\x97;\\<\x0cD7\x08[0m" HTTPStatus.BAD_REQUEST -]
+[2026-06-16 17:36:57,911: ERROR: _internal: 172.31.3.229 - - [16/Jun/2026 17:36:57] code 400, message Bad request version ('\x02h2\x08http/1.1\x00')]
+[2026-06-16 17:36:57,913: INFO: _internal: 172.31.3.229 - - [16/Jun/2026 17:36:57] "[35m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03æÍSÖ\x9eï¢Ï\x7fØ[¡\x81³\x86\x06vG^Æõ\x87o*Ç)\x19óy§O× Å'\x8dÀ0Ô\x8d-á~Yg\x9a±R\x92n\x03\x10\x11ïÒ.ÔdM\x03&È87\x0c\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Szz\x00\x00\x00+\x00\x07\x06zz\x03\x04\x03\x03\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00[0m" HTTPStatus.BAD_REQUEST -]
+[2026-06-16 17:37:01,297: INFO: _internal: 172.31.3.229 - - [16/Jun/2026 17:37:01] "GET / HTTP/1.1" 200 -]
+[2026-06-16 17:37:25,794: INFO: _internal: 172.31.3.229 - - [16/Jun/2026 17:37:25] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 17:37:42,695: INFO: _internal: 172.31.3.229 - - [16/Jun/2026 17:37:42] "POST /predict HTTP/1.1" 200 -]
