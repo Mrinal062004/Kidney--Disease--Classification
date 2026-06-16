@@ -1,21 +1,7 @@
-import dagshub
-import mlflow
+import os
 
-dagshub.init(
-    repo_owner="Mrinal062004",
-    repo_name="Kidney--Disease--Classification",
-    mlflow=True
-)
+normal = len(os.listdir("artifacts/data_ingestion/CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone/Normal"))
+tumor = len(os.listdir("artifacts/data_ingestion/CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone/Tumor"))
 
-mlflow.set_tracking_uri(
-    "https://dagshub.com/Mrinal062004/Kidney--Disease--Classification.mlflow"
-)
-
-print("Tracking URI:", mlflow.get_tracking_uri())
-
-mlflow.set_experiment("Default")
-
-with mlflow.start_run():
-    mlflow.log_param("test", 1)
-
-print("SUCCESS")
+print("Normal:", normal)
+print("Tumor :", tumor)

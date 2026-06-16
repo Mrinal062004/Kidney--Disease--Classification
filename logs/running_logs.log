@@ -1180,3 +1180,150 @@ x========x]
 [2026-06-16 12:23:50,934: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:23:50] "[31m[1mGET /predict HTTP/1.1[0m" 405 -]
 [2026-06-16 12:23:51,104: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:23:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
 [2026-06-16 12:23:53,507: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:23:53] "[31m[1mGET /predict HTTP/1.1[0m" 405 -]
+[2026-06-16 12:25:34,743: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1agfufEgib6t57IspkINsK3JUITOTUCzs/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2026-06-16 12:26:50,307: INFO: main: ***************]
+[2026-06-16 12:26:50,340: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-16 12:26:50,452: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 12:26:50,486: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 12:26:50,503: INFO: common: created  directory at : artifacts]
+[2026-06-16 12:26:50,521: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-16 12:26:57,020: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-16 12:26:59,061: INFO: main: >>>> stage Prepare Base Model completed<<<<
+
+x======x]
+[2026-06-16 12:26:59,062: INFO: main: _______________________________________]
+[2026-06-16 12:26:59,063: INFO: main: >>>>> stage Model Training started <<<<<]
+[2026-06-16 12:26:59,079: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 12:26:59,086: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 12:26:59,089: INFO: common: created  directory at : artifacts]
+[2026-06-16 12:26:59,093: INFO: common: created  directory at : artifacts\training]
+[2026-06-16 12:38:36,174: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.77.166.68:8080]
+[2026-06-16 12:38:36,175: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-16 12:38:55,898: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:38:55] "GET / HTTP/1.1" 200 -]
+[2026-06-16 12:39:03,689: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:39:03] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 12:39:29,464: INFO: _internal: 10.77.166.68 - - [16/Jun/2026 12:39:29] "POST /predict HTTP/1.1" 200 -]
+[2026-06-16 13:46:23,187: INFO: main: >>>>> c Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-16 13:46:23,222: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 13:46:23,233: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 13:46:23,236: INFO: common: created  directory at : artifacts]
+[2026-06-16 13:46:23,238: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-16 13:46:23,239: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1y-BVxKFm-MJW5RlUvBAu53wlw7g4sRMW/view?usp=drivesdk into file artifacts/data_ingestion/data.zip]
+[2026-06-16 13:47:08,565: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1y-BVxKFm-MJW5RlUvBAu53wlw7g4sRMW/view?usp=drivesdk into file artifacts/data_ingestion/data.zip]
+[2026-06-16 13:47:35,338: INFO: main: ***************]
+[2026-06-16 13:47:35,341: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-16 13:47:35,351: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 13:47:35,356: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 13:47:35,360: INFO: common: created  directory at : artifacts]
+[2026-06-16 13:47:35,363: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-16 13:47:36,902: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-16 13:47:37,400: INFO: main: >>>> stage Prepare Base Model completed<<<<
+
+x======x]
+[2026-06-16 13:47:37,401: INFO: main: _______________________________________]
+[2026-06-16 13:47:37,402: INFO: main: >>>>> stage Model Training started <<<<<]
+[2026-06-16 13:47:37,406: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 13:47:37,408: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 13:47:37,410: INFO: common: created  directory at : artifacts]
+[2026-06-16 13:47:37,411: INFO: common: created  directory at : artifacts\training]
+[2026-06-16 13:47:38,361: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone\\Tumor\\CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    model_trainer.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\stage03_training_model.py", line 15, in main
+    training.train_valid_generator()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\model_training.py", line 33, in train_valid_generator
+    self.valid_generator=valid_datagenerator.flow_from_directory(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\keras\preprocessing\image.py", line 1648, in flow_from_directory
+    return DirectoryIterator(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\keras\preprocessing\image.py", line 563, in __init__
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone\\Tumor\\CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone'
+[2026-06-16 13:56:47,621: INFO: main: >>>>> c Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-16 13:56:47,627: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 13:56:47,632: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 13:56:47,635: INFO: common: created  directory at : artifacts]
+[2026-06-16 13:56:47,636: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-16 13:56:47,637: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1y-BVxKFm-MJW5RlUvBAu53wlw7g4sRMW/view?usp=drivesdk into file artifacts/data_ingestion/data.zip]
+[2026-06-16 13:57:39,581: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1y-BVxKFm-MJW5RlUvBAu53wlw7g4sRMW/view?usp=drivesdk into file artifacts/data_ingestion/data.zip]
+[2026-06-16 13:57:56,528: INFO: main: ***************]
+[2026-06-16 13:57:56,528: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-16 13:57:56,537: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 13:57:56,543: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 13:57:56,547: INFO: common: created  directory at : artifacts]
+[2026-06-16 13:57:56,549: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-16 13:57:57,804: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-16 13:57:58,305: INFO: main: >>>> stage Prepare Base Model completed<<<<
+
+x======x]
+[2026-06-16 13:57:58,305: INFO: main: _______________________________________]
+[2026-06-16 13:57:58,306: INFO: main: >>>>> stage Model Training started <<<<<]
+[2026-06-16 13:57:58,308: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 13:57:58,310: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 13:57:58,311: INFO: common: created  directory at : artifacts]
+[2026-06-16 13:57:58,312: INFO: common: created  directory at : artifacts\training]
+[2026-06-16 13:57:58,999: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone\\CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone']
+Traceback (most recent call last):
+  File "main.py", line 42, in <module>
+    model_trainer.main()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\pipeline\stage03_training_model.py", line 15, in main
+    training.train_valid_generator()
+  File "c:\users\user\iscale\kidney--disease--classification\src\Kidney\components\model_training.py", line 33, in train_valid_generator
+    self.valid_generator=valid_datagenerator.flow_from_directory(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\keras\preprocessing\image.py", line 1648, in flow_from_directory
+    return DirectoryIterator(
+  File "C:\Users\user\anaconda3\New folder\envs\kidney\lib\site-packages\keras\preprocessing\image.py", line 563, in __init__
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone\\CT-KIDNEY-DATASET-Normal-Cyst-Tumor-Stone'
+[2026-06-16 14:03:46,065: INFO: main: >>>>> c Data Ingestion stage started <<<<<<
+
+x========x]
+[2026-06-16 14:03:46,068: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 14:03:46,072: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 14:03:46,073: INFO: common: created  directory at : artifacts]
+[2026-06-16 14:03:46,074: INFO: common: created  directory at : artifacts/data_ingestion]
+[2026-06-16 14:03:46,075: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1y-BVxKFm-MJW5RlUvBAu53wlw7g4sRMW/view?usp=drivesdk into file artifacts/data_ingestion/data.zip]
+[2026-06-16 14:04:43,145: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1y-BVxKFm-MJW5RlUvBAu53wlw7g4sRMW/view?usp=drivesdk into file artifacts/data_ingestion/data.zip]
+[2026-06-16 14:04:56,287: INFO: main: ***************]
+[2026-06-16 14:04:56,289: INFO: main: >>>> stage Prepare Base Model started <<<<]
+[2026-06-16 14:04:56,295: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 14:04:56,298: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 14:04:56,300: INFO: common: created  directory at : artifacts]
+[2026-06-16 14:04:56,304: INFO: common: created  directory at : artifacts/prepare_base_model]
+[2026-06-16 14:04:57,687: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-06-16 14:04:58,410: INFO: main: >>>> stage Prepare Base Model completed<<<<
+
+x======x]
+[2026-06-16 14:04:58,412: INFO: main: _______________________________________]
+[2026-06-16 14:04:58,413: INFO: main: >>>>> stage Model Training started <<<<<]
+[2026-06-16 14:04:58,422: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 14:04:58,428: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 14:04:58,430: INFO: common: created  directory at : artifacts]
+[2026-06-16 14:04:58,435: INFO: common: created  directory at : artifacts\training]
+[2026-06-16 17:28:42,536: INFO: main: stage Model Training completed <<<<< 
+
+ X---------------------]
+[2026-06-16 17:28:42,548: INFO: main: ***************]
+[2026-06-16 17:28:42,549: INFO: main: >>>> stage Evaluation Stage started <<<<]
+[2026-06-16 17:28:42,606: INFO: common: yaml file : config\config.yaml loaded successfully ]
+[2026-06-16 17:28:42,676: INFO: common: yaml file : PARAMS.yaml loaded successfully ]
+[2026-06-16 17:28:42,684: INFO: common: created  directory at : artifacts]
+[2026-06-16 17:32:31,049: INFO: common: json file saved at : scores.json]
+[2026-06-16 17:32:31,053: INFO: common: json file saved at : scores.json]
+[2026-06-16 17:32:38,648: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 17:32:38,796: INFO: helpers: Accessing as Mrinal062004]
+[2026-06-16 17:32:45,126: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/repos/Mrinal062004/Kidney--Disease--Classification "HTTP/1.1 200 OK"]
+[2026-06-16 17:32:49,063: INFO: _client: HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"]
+[2026-06-16 17:32:49,077: INFO: helpers: Initialized MLflow to track repo "Mrinal062004/Kidney--Disease--Classification"]
+[2026-06-16 17:32:49,081: INFO: helpers: Repository Mrinal062004/Kidney--Disease--Classification initialized!]
+[2026-06-16 17:33:18,907: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-06-16 17:33:19,384: INFO: builder_impl: Assets written to: C:\Users\user\AppData\Local\Temp\tmpfazjg2b1\model\data\model\assets]
+[2026-06-16 17:36:00,381: INFO: main: >>>> stage Evaluation Stage completed<<<<
+
+x======x]
