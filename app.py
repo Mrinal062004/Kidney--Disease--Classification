@@ -43,23 +43,30 @@ def trainRoute():
 
 @app.route("/predict", methods=["POST"])
 @cross_origin()
+@app.route("/predict", methods=["POST"])
+@cross_origin()
 def predictRoute():
     try:
         print("Predict route hit")
 
-        image = request.json["image"]
+        image_data = request.json["image"]
+
         print("Image received")
 
-        decodeImage(image, clApp.filename)
-        print("Image decoded")
+        decodeImage(image_data, clApp.filename)
+
+        print("Image decoded and saved")
 
         result = clApp.classifier.predict()
-        print("Prediction completed")
+
+        print("Returning result")
 
         return jsonify(result)
 
     except Exception as e:
-        print("ERROR:", str(e))
+
+        print("APP ERROR:", str(e))
+
         return jsonify({"error": str(e)}), 500
 
 
