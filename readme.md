@@ -47,5 +47,19 @@ in bash
    ### dvc cmd
    dvc init
    dvc repro
-   dvc dag
+   dvc dagshub
+
+
+
+
+   ### About The deployment
+   1) Build docker image to ecr
+   2) Push your deocker image to ECR
+   3) Launch your ec2
+   4) Pull Your docker image to ECR
+   5) launch your docker image to EC2
+   # policy:
+   1. AmazonEC2ContainerRegistryFullAccess
+   2. AmazonEC2Fullccess
+
    

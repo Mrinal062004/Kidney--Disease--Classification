@@ -1471,3 +1471,14 @@ x=====]
 [2026-06-16 21:46:11,773: INFO: _internal: 10.77.166.1 - - [16/Jun/2026 21:46:11] "GET / HTTP/1.1" 200 -]
 [2026-06-16 21:46:29,042: INFO: _internal: 10.77.166.1 - - [16/Jun/2026 21:46:29] "POST /predict HTTP/1.1" 200 -]
 [2026-06-16 21:46:58,614: INFO: _internal: 10.77.166.1 - - [16/Jun/2026 21:46:58] "POST /predict HTTP/1.1" 200 -]
+[2026-06-17 17:18:55,521: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.31.3.229:8080]
+[2026-06-17 17:18:55,522: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-17 17:19:09,785: INFO: _internal: 127.0.0.1 - - [17/Jun/2026 17:19:09] "GET / HTTP/1.1" 200 -]
+[2026-06-17 17:19:21,537: INFO: _internal: 127.0.0.1 - - [17/Jun/2026 17:19:21] "POST /predict HTTP/1.1" 200 -]
+[2026-06-17 17:19:40,629: INFO: _internal: 127.0.0.1 - - [17/Jun/2026 17:19:40] "POST /predict HTTP/1.1" 200 -]
+[2026-06-17 17:21:38,363: INFO: _internal: 127.0.0.1 - - [17/Jun/2026 17:21:38] "POST /predict HTTP/1.1" 200 -]
+[2026-06-17 17:21:40,265: INFO: _internal: 127.0.0.1 - - [17/Jun/2026 17:21:40] "POST /predict HTTP/1.1" 200 -]
+[2026-06-17 17:21:51,325: INFO: _internal: 127.0.0.1 - - [17/Jun/2026 17:21:51] "POST /predict HTTP/1.1" 200 -]
