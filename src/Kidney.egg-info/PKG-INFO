@@ -6,3 +6,70 @@ Home-page: https://github.com/mrinal062004/Kidney--Disease--Classification
 Author: mrinal062004
 Author-email: tiwari.mrinal2004@gmail.com
 Project-URL: Bug Tracker, https://github.com/mrinal062004/Kidney--Disease--Classification/ issues
+Description-Content-Type: text/markdown
+
+here we describe all the flow of the code
+# Kidney--Disease--Classification 
+## Workflows
+1. Update cofig.yaml
+2. Update Secrets.yaml[optional]
+3. Update params.yaml
+4. Update the entity
+5. Update the configuration manager in src config
+6.  Update the components
+7. update the pipeline
+8. Update the main.py
+9. Update the dvc.yaml
+10 app.py
+
+# how to run 
+
+# steps :
+Clone thew repository 
+""" bash 
+https://github.com/Mrinal062004/Kidney--Disease--Classification
+"""
+### step 1 -create a conda environment after opening the repository
+
+""" bash 
+conda crete -n kidney python =3.8
+::
+conda activate kidney
+in bash 
+   #### step 2 -: install the requiremnets 
+
+   """bash 
+   pip install -r requirements.txt
+
+
+
+   ### cmd 
+   -mlflow ui
+
+   #### dagshub
+   [dagshub]([text](https://dagshub.com/Mrinal062004/Kidney--Disease--Classification.mlflow)
+   export mlflow tracking url =https://dagshub.com/Mrinal062004/Kidney--Disease--Classification.mlflow
+   export username
+   export tracking password
+
+
+
+   ### dvc cmd
+   dvc init
+   dvc repro
+   dvc dagshub
+
+
+
+
+   ### About The deployment
+   1) Build docker image to ecr
+   2) Push your deocker image to ECR
+   3) Launch your ec2
+   4) Pull Your docker image to ECR
+   5) launch your docker image to EC2
+   # policy:
+   1. AmazonEC2ContainerRegistryFullAccess
+   2. AmazonEC2Fullccess
+
+   
