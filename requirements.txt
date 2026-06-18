@@ -16,3 +16,4 @@ Flask-Cors
 gdown 
 python-box==6.0.2
 gunicorn
+-e .
