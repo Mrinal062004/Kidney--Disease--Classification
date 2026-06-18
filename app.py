@@ -1,10 +1,11 @@
-from flask import Flask ,request,jsonify,render_template
-import os
-from flask_cors import CORS ,cross_origin
+
 import sys
 import os
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
+from flask import Flask ,request,jsonify,render_template
+
+from flask_cors import CORS ,cross_origin
 
 from Kidney.utils.common import decodeImage
 from Kidney.pipeline.prediction import PredictionPipeline
