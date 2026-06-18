@@ -1492,3 +1492,10 @@ x=====]
  * Running on http://127.0.0.1:8080
  * Running on http://10.77.166.60:8080]
 [2026-06-18 09:44:52,824: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-18 11:23:09,164: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.77.166.60:8080]
+[2026-06-18 11:23:09,167: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-06-18 11:23:31,696: INFO: _internal: 127.0.0.1 - - [18/Jun/2026 11:23:31] "GET / HTTP/1.1" 200 -]
+[2026-06-18 11:23:40,171: INFO: _internal: 127.0.0.1 - - [18/Jun/2026 11:23:40] "POST /predict HTTP/1.1" 200 -]
