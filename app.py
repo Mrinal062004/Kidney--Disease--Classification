@@ -15,7 +15,7 @@ class ClientApp:
         self.filename = "inputImage.jpg"
 
         self.classifier = PredictionPipeline(
-    "artifacts/training/model.h5"
+    "model/model.h5"
 )
 
 @app.route("/",methods=["GET"])
@@ -40,8 +40,11 @@ def predictRoute():
     result=clApp.classifier.predict()
     return jsonify(result)
 if __name__=="__main__":
-    clApp=ClientApp()
-    #app.run(host="0.0.0.0",portr=8080)# for local host
-    app.run(host="0.0.0.0",port=8080)# for Aws
+    clApp = ClientApp()
 
-    #app.run(host="0.0.0.0",portr=80)# for Azure 
+    port = int(os.environ.get("PORT", 8080))
+
+    app.run(
+        host="0.0.0.0",
+        port=port
+    )
