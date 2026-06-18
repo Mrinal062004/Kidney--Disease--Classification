@@ -3,4 +3,3 @@ artifacts/
 *.csv
 *.zip
 __pycache__/
-kidney/
